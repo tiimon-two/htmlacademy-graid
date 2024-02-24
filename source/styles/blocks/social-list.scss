@@ -1,0 +1,35 @@
+.social-list__item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--logo {
+    margin-right: 38px;
+    padding: 0;
+  }
+}
+
+.social-list__link {
+  padding: 10px;
+
+  svg {
+    fill: $base-gray;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $base-secondary;
+
+    svg {
+      fill: $base-primary;
+    }
+  }
+
+  &:active {
+    background-color: $primary-opacity;
+  }
+}

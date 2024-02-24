@@ -1,0 +1,17 @@
+.slider-controls__control {
+  width: 62px;
+  height: 4px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: $base-white;
+  cursor: pointer;
+
+  &--current {
+    background-color: $base-primary;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

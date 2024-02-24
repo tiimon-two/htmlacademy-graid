@@ -1,0 +1,79 @@
+.milk-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $base-black;
+}
+
+.milk-list__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.milk-list__label-radio {
+  position: relative;
+  padding-left: 34px;
+
+  &:hover,
+  &:focus {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 4px;
+      background-color: $primary-opacity;
+      border-radius: 50%;
+    }
+
+    &::before {
+      border-color: $primary-lighter;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $base-gray;
+    border-radius: 50%;
+  }
+}
+
+.milk-list__input-radio:checked + .milk-list__label-radio {
+  &::before {
+    border-color: $base-primary;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50%;
+    background-color: $base-primary;
+  }
+}
+
+.milk-list__input-radio:disabled + .milk-list__label--radio {
+  color: $base-gray;
+
+  &::before {
+    border-color: $light-gray;
+  }
+
+  &::after {
+    background-color: $light-gray;
+  }
+}
