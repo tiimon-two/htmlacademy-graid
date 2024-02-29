@@ -18,62 +18,60 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper">
-        <div class="header__container">
-          <nav class="nav nav--opened nav--nojs">
-            <div class="header__logo-container">
-              <a class="header__logo" href="#">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="./images/big-logo.svg">
-                  <source media="(min-width: 768px)" srcset="./images/middle-logo.svg">
-                  <img src="./images/small-logo.svg"  alt="drink2Go">
-                </picture>
+      <div class="header__container">
+        <nav class="nav nav--opened nav--nojs">
+          <div class="header__logo-container">
+            <a class="header__logo" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./images/big-logo.svg">
+                <source media="(min-width: 768px)" srcset="./images/middle-logo.svg">
+                <img src="./images/small-logo.svg"  alt="drink2Go">
+              </picture>
+            </a>
+            <span class="header__title">Интернет-магазин кофейных напитков</span>
+          </div>
+          <ul class="nav__user-list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">
+                <svg class="user-list__image" width="16" height="16">
+                  <use xlink:href="./images/icons/sprite.svg#icon-user"></use>
+                </svg>
+                <span class="user-list__text">Войти</span>
               </a>
-              <span class="header__title">Интернет-магазин кофейных напитков</span>
-            </div>
-            <ul class="nav__user-list user-list">
-              <li class="user-list__item">
-                <a class="user-list__link" href="#">
-                  <svg class="user-list__image" width="16" height="16">
-                    <use xlink:href="./images/icons/sprite.svg#icon-user"></use>
-                  </svg>
-                  <span class="user-list__text">Войти</span>
-                </a>
-              </li>
-              <li class="user-list__item">
-                <a class="user-list__link" href="#">
-                  <svg  class="user-list__image" width="16" height="16">
-                    <use xlink:href="./images/icons/sprite.svg#icon-cart"></use>
-                  </svg>
-                  <span class="user-list__text">Корзина</span>
-                </a>
-              </li>
-            </ul>
-            <button class="nav__toggle nav__toggle--nojs" type="button" title="Открыть меню." aria-label="Закрыть"></button>
-            <ul class="nav__site-list nav__site-list--opened site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="#">
-                  Главная
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">
-                  Каталог
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">
-                  Доставка
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">
-                  О нас
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">
+                <svg  class="user-list__image" width="16" height="16">
+                  <use xlink:href="./images/icons/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="user-list__text">Корзина</span>
+              </a>
+            </li>
+          </ul>
+          <button class="nav__toggle nav__toggle--nojs" type="button" title="Открыть меню." aria-label="Закрыть"></button>
+          <ul class="nav__site-list nav__site-list--opened site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main">
@@ -288,8 +286,8 @@
                 </fieldset>
               </div>
               <div class="form__button-container">
-                <button class="catalog__button catalog__button--apply">Применить</button>
-                <button class="catalog__button catalog__button--reset">Сбросить</button>
+                <button class="catalog__button catalog__button--apply" type="submit">Применить</button>
+                <button class="catalog__button catalog__button--reset" type="button">Сбросить</button>
               </div>
             </form>
             <div class="catalog__container">
@@ -463,9 +461,15 @@
                 <div class="catalog__pagination-container pagination">
                   <button class="pagination__button pagination__button--prev"><span class="pagination__text">Назад</span></button>
                   <ul class="pagination__list">
-                    <li class="pagination__item" tabindex="0" aria-label="Первая страница.">1</li>
-                    <li class="pagination__item pagination__item--active" tabindex="0" aria-label="Вторая страница.">2</li>
-                    <li class="pagination__item" tabindex="0" aria-label="Третья страница.">3</li>
+                    <li class="pagination__item" tabindex="0" aria-label="Первая страница.">
+                      <a href="#">1</a>
+                    </li>
+                    <li class="pagination__item pagination__item--active" tabindex="0" aria-label="Вторая страница.">
+                      <a href="#">2</a>
+                    </li>
+                    <li class="pagination__item" tabindex="0" aria-label="Третья страница.">
+                      <a href="#">3</a>
+                    </li>
                   </ul>
                   <button class="pagination__button pagination__button--next"><span class="pagination__text">Вперёд</span></button>
                 </div>
@@ -529,18 +533,32 @@
             <div class="footer__container">
               <h3 class="footer__title">Интернет магазин</h3>
               <ul class="footer__list">
-                <li class="footer__item">Каталог</li>
-                <li class="footer__item">Доставка</li>
-                <li class="footer__item">Способы оплаты</li>
-                <li class="footer__item">О нас</li>
+                <li class="footer__item">
+                  <a href="#">Каталог</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Способы оплаты</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">О нас</a>
+                </li>
               </ul>
             </div>
             <div class="footer__container">
               <h3 class="footer__title">Медиа</h3>
               <ul class="footer__list">
-                <li class="footer__item">Блог</li>
-                <li class="footer__item">Информация для СМИ</li>
-                <li class="footer__item">Правовая информация</li>
+                <li class="footer__item">
+                  <a href="#">Блог</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Информация для СМИ</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Правовая информация</a>
+                </li>
               </ul>
             </div>
             <div class="footer__container">

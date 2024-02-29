@@ -115,6 +115,19 @@
   padding-bottom: 8px;
   border-bottom: 1px solid $flat-white;
 
+  a {
+    color: $base-black;
+
+    &:hover,
+    &:focus {
+      color: $base-primary;
+    }
+
+    &:active {
+      color: $primary-darker;
+    }
+  }
+
   &:last-child {
     padding-bottom: 18px;
   }

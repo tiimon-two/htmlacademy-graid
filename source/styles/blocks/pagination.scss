@@ -15,6 +15,15 @@
   position: relative;
   background-color: $base-white;
   border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    .pagination__text {
+      color: $base-white;
+    }
+  }
 
   &::before,
   &::after {
@@ -95,11 +104,28 @@
   text-align: center;
   color: $base-primary;
   background-color: $base-white;
+  cursor: pointer;
+
+  a {
+    color: $base-primary;
+  }
 
   &--active {
     font-weight: 600;
     color: $base-black;
     background-color: $lightest-gray;
+
+    a {
+      color: $base-black;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    a {
+      color: $base-white;
+    }
   }
 }
 

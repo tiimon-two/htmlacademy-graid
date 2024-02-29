@@ -1,28 +1,7 @@
-.header__wrapper {
+.header__container {
   width: 100vw;
   background-color: $base-white;
   background-size: 100%;
-}
-
-.header__container {
-  display: flex;
-  margin: 0 auto;
-  width: 320px;
-  padding: 0;
-  padding-bottom: 0;
-  background-color: $base-white;
-  color: $base-black;
-  font-size: 12px;
-  line-height: 16px;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    padding-top: 0;
-  }
-
-  @media (min-width: $desctop-width) {
-    width: 1440px;
-  }
 }
 
 .header__logo-container {

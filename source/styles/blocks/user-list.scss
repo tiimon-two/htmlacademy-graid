@@ -21,9 +21,9 @@
     }
 
     &:hover,
-    &:focus > .user-list__text{
+    &:focus > .user-list__text {
       .user-list__text {
-      color: $base-primary;
+        color: $base-primary;
       }
 
       svg {
@@ -34,11 +34,6 @@
     &:hover,
     &:focus > svg {
       fill: $base-primary;
-    }
-
-    &:hover,
-    &:focus > .user-list__text {
-      color: $base-primary;
     }
   }
 
